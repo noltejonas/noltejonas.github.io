@@ -32,6 +32,30 @@
   <title>bauerlieferant</title>
   <link rel="manifest" href="manifest.json">
 
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA8dxFSMCw3FPg9M7VyT3SXkuVeb5QLW6o",
+  authDomain: "bauerlennferant.firebaseapp.com",
+  projectId: "bauerlennferant",
+  storageBucket: "bauerlennferant.appspot.com",
+  messagingSenderId: "204606306704",
+  appId: "1:204606306704:web:6e7e79714f8c9c97d11b15",
+  measurementId: "G-6XF12EZFMY"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+  </script>
+
   <script>
     // The value below is injected by flutter build, do not touch.
     const serviceWorkerVersion = "635294387";
